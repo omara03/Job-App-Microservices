@@ -85,14 +85,6 @@ Or directly from your IDE (e.g., IntelliJ or Eclipse).
 - `POST http://localhost:8080/reviews` – Add a review  
 
 
-## 🔐 Security (Optional)
-
-This project is ready for integration with:
-
-- ✅ **JWT-based authentication**
-- ✅ **Role-based access control**
-
-
 ## 📦 Future Enhancements
 
 - Service discovery with **Eureka**  
