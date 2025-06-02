@@ -44,6 +44,71 @@ Each service is designed for independent deployment and maintenance, and communi
 
 ## 🚀 Getting Started
 
+## 🚀 How to Run
+
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/yourusername/job-microservices-backend.git
+
+2. **Configure each microservice**  
+   Update each microservice's `application.yml` or `application.properties` file with the correct database connection:
+
+   - Host  
+   - Port  
+   - Username  
+   - Password
+
+
+3. **Run the services**  
+   You can run each Spring Boot service using:
+
+   ```bash
+   ./mvnw spring-boot:run
+Or directly from your IDE (e.g., IntelliJ or Eclipse).
+
+## 📬 Sample API Endpoints
+
+### 🔹 Job Service
+- `POST http://localhost:8080/jobs` – Create a job  
+- `GET http://localhost:8080/jobs` – Get all jobs  
+- `GET http://localhost:8080/jobs/{id}` – Get job by ID  
+
+
+### 🔹 Company Service
+- `POST http://localhost:8080/companies` – Add a company  
+- `GET http://localhost:8080/companies` – Get all companies  
+- `GET http://localhost:8080/companies/{id}` – Get company by ID  
+- `GET http://localhost:8080/companies/{companyId}/reviews/{reviewId}` – Get reviews for a company  
+
+
+### 🔹 Review Service
+- `POST http://localhost:8080/reviews` – Add a review  
+
+
+## 🔐 Security (Optional)
+
+This project is ready for integration with:
+
+- ✅ **JWT-based authentication**
+- ✅ **Role-based access control**
+
+
+## 📦 Future Enhancements
+
+- Service discovery with **Eureka**  
+- Centralized config with **Spring Cloud Config**  
+- API Gateway using **Spring Cloud Gateway**  
+- Asynchronous communication using **Kafka**  
+
+
+## 👨‍💻 Author
+
+Developed by **Omar A.**  
+Computer Science Student | Backend Developer | Microservices Enthusiast
+
+
+
+
+
+
+
